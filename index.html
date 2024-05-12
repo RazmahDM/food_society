@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Общество сытыхъ - Ресторан с историей</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -11,21 +12,28 @@
         <div class="container">
             <nav class="header">
                 <ul class="main_menu">
-                    <li><a href="#">О ресторане</a></li>
-                    <li><a href="#">Меню</a></li>
-                    <li><a href="#">Фото</a></li>
-                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#about">О ресторане</a></li>
+                    <li><a href="#menu">Меню</a></li>
+                    <li><a href="#gallery">Фото</a></li>
+                    <li><a href="https://yandex.ru/maps/org/obshchestvo_sytykh/79058933426/reviews/?ll=39.719818%2C47.225903&z=16">Отзывы</a></li>
                 </ul>
                 <div class="logo"><img src="/img/logo.png" height="36" width="112"></div>
                 <div class="additional_menu">
-                    <a href="#">Контакты</a>
+                    <a href="#contact">Контакты</a>
                     <a class="tel" href="tel:8(952)602-70-82"><img src="/img/tel.png">8(952)602-70-82</a>
-                    <div class="lang_switcher">
-                        <a href="#">RU</a>
-                        <a href="#">EN</a>
-                    </div>
+                </div>
+                <div class="burger">
+                    <img src="/img/burger.png">
                 </div>
             </nav>
+            <ul class="burger_menu">
+                <li><a href="#about">О ресторане</a></li>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#gallery">Фото</a></li>
+                <li><a href="https://yandex.ru/maps/org/obshchestvo_sytykh/79058933426/reviews/?ll=39.719818%2C47.225903&z=16">Отзывы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a class="tel" href="tel:8(952)602-70-82"><img src="/img/tel.png">8(952)602-70-82</a></li>
+            </ul>
         </div>
     </header>
     <main>
@@ -35,15 +43,32 @@
                     <h1>ОБЩЕСТВО <span>СЫТЫХЪ</span></h1>
                     <h2>ресторан с историей</h2>
                     <div class="hero_buttons">
-                        <a class="order_button" href="#">Заказать столик</a>
-                        <a class="instagram_button" href="#"><img src="/img/instagram.png"></a>
-                        <a class="tripadvisor_button" href="#"><img src="/img/tripadvisor.png"></a>
+                        <a class="order_button" href="#order">Заказать столик</a>
+                        <a class="instagram_button" href="https://www.instagram.com/obsh_sytyh/"><img src="/img/instagram.png"></a>
+                        <a class="tripadvisor_button" href="https://www.tripadvisor.ru/Restaurant_Review-g298535-d16662221-Reviews-Obshhestvo_Sytykh-Rostov_on_Don_Rostov_Oblast_Southern_District.html"><img src="/img/tripadvisor.png"></a>
                     </div>
                 </div>
             </div>
             <img class="hero_img" src="/img/hero_img.png">
         </section>
-        <section class="menu">
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__inner section">
+                    <h3>О РЕСТОРАНЕ</h3>
+                    <div class="about__block">
+                        <div class="about__image">
+                            <img src="/img/about.jpeg">
+                        </div>
+                        <div class="about__text">
+                            <h4>Ресторация «Общество Сытыхъ»</h3>
+                            <p>— ресторан с дореволюционной атмосферой Ростова, конца ХIХ века. Мы воссоздали интерьер 130-летней давности, передали колорит и настроение того времени.</p>
+                            <p>Только у нас, Вы сможете насладиться блюдами дореволюционного Ростова-на-Дону, которые готовятся по рецептам старинных кулинарных книг, записям историков и передаваемыми поколениями семейным рецептам.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu" id="menu">
             <div class="container">
                 <div class="menu__inner section">
                     <h3>Меню</h3>
@@ -51,28 +76,49 @@
                         <div class="menu__item">
                             <h4>Меню кухни</h4>
                             <img src="/img/1.png">
-                            <a><img src="/img/button.png"></a>
+                            <a href="https://drive.google.com/file/d/1h38D5oXvH2-rLr65FJ2_tnFeNfIFlQqY/view?usp=drivesdk"><img src="/img/button.png"></a>
                         </div>
                         <div class="menu__item">
                             <h4>Меню Бара</h4>
                             <img src="/img/2.png">
-                            <a><img src="/img/button.png"></a>
+                            <a href="https://drive.google.com/file/d/1Csb02DKkHvxV7z9X4bZeypJL2n8_wG7n/view"><img src="/img/button.png"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="container">
                 <div class="gallery__inner section">
                     <h3>Галерея</h3>
                     <div class="gallery__block">
-                        <img src="/img/gallery/1.png">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="/img/gallery/1.png">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="/img/gallery/2.jpg">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="/img/gallery/3.jpg">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="/img/gallery/4.jpg">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="/img/gallery/5.jpg">
+                          </div>
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                      
+                        <div class="prev">&lt</div>
+                        <div class="next">&gt</div>
+                      
                     </div>
                 </div>
             </div>
         </section>
-        <section class="table">
+        <section class="table" id="order">
             <div class="container">
                 <div class="table__inner section">
                     <form>
@@ -89,7 +135,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <div class="contact__inner section">
                     <h3>Контакты</h3>
@@ -103,8 +149,8 @@
                             <p>Пт, Сб - с 12:00 до 24:00</p>
                             <h4>Телефон:</h4>
                             <p>8(952)602-70-82</p>
-                            <a><img src="/img/inst.png"></a>
-                            <a><img src="/img/trip.png"></a>
+                            <a href="https://www.instagram.com/obsh_sytyh/"><img src="/img/inst.png"></a>
+                            <a href="https://www.tripadvisor.ru/Restaurant_Review-g298535-d16662221-Reviews-Obshhestvo_Sytykh-Rostov_on_Don_Rostov_Oblast_Southern_District.html"><img src="/img/trip.png"></a>
                         </div>
                     </div>
                 </div>
@@ -123,14 +169,16 @@
             <div class="footer">
                 <div class="logo"><img src="/img/logo.png" height="36" width="112"></div>
                 <ul class="main_menu">
-                    <li><a href="#">О ресторане</a></li>
-                    <li><a href="#">Меню</a></li>
-                    <li><a href="#">Фото</a></li>
-                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#about">О ресторане</a></li>
+                    <li><a href="#menu">Меню</a></li>
+                    <li><a href="#gallery">Фото</a></li>
+                    <li><a href="https://yandex.ru/maps/org/obshchestvo_sytykh/79058933426/reviews/?ll=39.719818%2C47.225903&z=16">Отзывы</a></li>
                 </ul>
                 <a class="tel" href="tel:8(952)602-70-82">8(952)602-70-82</a>
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" ></script>
+    <script src="/script.js"></script>
 </body>
 </html>
