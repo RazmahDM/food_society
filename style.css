@@ -1,0 +1,298 @@
+@font-face {
+	font-family: 'Companion'; 
+	src: url(/font/Companion-League.ttf); 
+}
+
+body {
+    font-family: 'Companion', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #272727;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    background: #6C391C;
+    padding: 8px 0px;
+}
+
+.header {
+    justify-content: space-between;
+    min-width: 100%;
+    color: #fff;
+    display: flex;
+    font-size: 13px;
+    gap: 100px;
+}
+.main_menu, .additional_menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lang_switcher {
+    display: flex;
+    gap: 20px;
+}
+
+input, button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.hero {
+    background-image: url('/img/hero_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 100px);
+    position: relative;
+}
+.hero_img {
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+.logo img {
+    height: 36px;
+    min-width: 112px;
+}
+
+.tel {
+    display: flex;
+    gap: 4px;
+}
+
+.header a:hover {
+    color: #eee;
+}
+
+.hero__inner {
+    position: absolute;
+    z-index: 5;
+    padding-top: 200px;
+}
+
+.hero__inner h1 {
+    font-size: 128px;
+}
+.hero__inner h1 span {
+    background: #6C391C;
+    padding:  0 20px;
+    color: #fff;
+}
+
+.hero__inner h2 {
+    color: #6C391C;
+    font-size: 48px;
+}
+
+.hero_buttons {
+    font-size: 36px;
+    display: flex;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.order_button {
+    color: #fff;
+    padding: 0 30px;
+    background: #6C391C;
+}
+.instagram_button {
+    background: linear-gradient(#EA2E9F, #DA0A0A);
+    width: 70px;
+}
+.tripadvisor_button {
+    background: linear-gradient(#26DD9B, #2A5F12);
+    width: 70px;
+}
+
+.hero_buttons a {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 70px;
+    border-radius: 6px;
+}
+
+.hero_buttons a:hover {
+    filter: brightness(0.9);
+}
+
+.hero_buttons a img {
+    height: 29px;
+    width: 29px;
+}
+
+
+.section {
+    padding: 40px 0;
+}
+
+.section h3 {
+    font-size: 128px;
+}
+
+
+.waiting__inner {
+    display: flex;
+    align-content: inherit;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.menu__block {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__item h4 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.menu__item a {
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.menu__item a:hover {
+    filter:brightness(0.5);
+}
+
+
+.gallery__block {
+    margin-top: 40px;
+    height: 720px;
+}
+
+
+.table__inner {
+    display: flex;
+    gap: 40px;
+}
+
+.table__inner form, .table__inner > img {
+    width: 50%;
+    font-size: 24px;
+}
+
+.table__inner h5 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.table__inner input {
+    margin-bottom: 40px;
+    padding: 16px 12px;
+    width: 100%;
+    border: 2px solid #a5592c;
+    border-radius: 4px;
+}
+
+.table__inner input::placeholder { 
+    color: #BEBEBE;
+ }
+
+
+.table__inner button {
+    height: 70px;
+    padding: 0 70px;
+    background: #6C391C;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.table__inner button:hover {
+    filter: brightness(0.9);
+}
+
+.form__inputs {
+    display: flex;
+    gap: 20px;
+}
+
+
+.waiting__inner h3 {
+    font-size: 128px;
+    text-align: center;
+}
+
+.contact__block {
+    margin-top: 40px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+
+.contact__block h4:first-child {
+    margin-top: 0 !important;
+}
+
+.contact__block h4 {
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+.contact__block p {
+    font-size: 24px;
+}
+.contact__block a {
+    margin-top: 20px;
+    cursor: pointer;
+    display: block;
+}
+.contact__block a:hover {
+    filter:contrast(0.4)
+}
+
+footer {
+    background: #6C391C;
+}
+
+.footer {
+    color: #fff;
+    gap: 40px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}

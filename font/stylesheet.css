@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Companion';
+    src: url('Companion-League.eot');
+    src: local('Companion League'), local('Companion-League'),
+        url('Companion-League.eot?#iefix') format('embedded-opentype'),
+        url('Companion-League.woff2') format('woff2'),
+        url('Companion-League.woff') format('woff'),
+        url('Companion-League.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
